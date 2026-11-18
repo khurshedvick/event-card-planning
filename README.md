@@ -2,4 +2,6 @@
 
 This repository holds agent-facing product planning for EventCard. Start with [docs/README.md](docs/README.md) for the current decisions, open questions, and reference notes.
 
-The [backend](backend) and [frontend](frontend) directories are separate Git repositories linked as submodules. See [docs/submodules.md](docs/submodules.md) to clone and work with them. No implementation has started. A mobile app or other service can be added later if needed.
+The [backend](backend) and [frontend](frontend) directories are separate Git repositories linked as submodules. See [docs/submodules.md](docs/submodules.md) to clone and work with them. The frontend now contains a working invitation editor with one template under construction; the backend is still a placeholder. A mobile app or other service can be added later if needed.
+
+For local development, run `npm run dev` inside `frontend/` and open `http://localhost:4300`. See `frontend/README.md` for the template workflow.
