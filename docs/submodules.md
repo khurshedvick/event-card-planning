@@ -17,4 +17,4 @@ If planning was already cloned without its submodules, run `git submodule update
 3. Commit and push in that repository: `git push origin codex/eventcard-editor` for the frontend, `git push origin main` for the backend.
 4. Return to the planning repository. Run `git add frontend` or `git add backend`, commit that pointer change, and push planning.
 
-The child commit must be pushed before the planning pointer; otherwise other people cannot fetch the commit planning references. To inspect the recorded versions, run `git submodule status` from the planning repository. The frontend commit currently recorded here matches the editor deployed at `app.eventcard.cc`.
+The child commit must be pushed before the planning pointer; otherwise other people cannot fetch the commit planning references. To inspect the recorded versions, run `git submodule status` from the planning repository. The editor currently deployed at `app.eventcard.cc` was verified on 2026-11-18 as frontend commit `42dea82` (all served files matched byte-for-byte). The frontend submodule now records rollback commit `390ef38`, whose tree matches `8107cf3`; that rollback is not yet deployed.
